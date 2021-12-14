@@ -16,19 +16,19 @@ const App = () => {
         <Layout>
           <div className='routes'>
             <Routes>
-              <Route path='/cryptoverse' element={<Homepage />} />
+              <Route path='/' element={<Homepage />} />
             </Routes>
             <Routes>
-              <Route path='/cryptoverse/exchanges' element={<Exchanges />} />
+              <Route path='/exchanges' element={<Exchanges />} />
             </Routes>
             <Routes>
-              <Route path='/cryptoverse/cryptocurrencies' element={<Cryptocurrencies />} />
+              <Route path='/cryptocurrencies' element={<Cryptocurrencies />} />
             </Routes>
             <Routes>
-              <Route path='/cryptoverse/crypto/:coinId' element={<CryptoDetails />} />
+              <Route path='/crypto/:coinId' element={<CryptoDetails />} />
             </Routes>
             <Routes>
-              <Route path='/cryptoverse/news' element={<News />} />
+              <Route path='/news' element={<News />} />
             </Routes>
           </div>
         </Layout>
@@ -39,9 +39,9 @@ const App = () => {
             All Rights Reserved
           </Typography.Title>
           <Space>
-            <Link to='/cryptoverse'>Home</Link>
-            <Link to='/cryptoverse/exchanges'>Exchanges</Link>
-            <Link to='/cryptoverse/news'>News</Link>
+            <Link to='/'>Home</Link>
+            <Link to='/exchanges'>Exchanges</Link>
+            <Link to='/news'>News</Link>
           </Space>
         </div>
       </div>
